@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>	
+
+
+<!-- meta data -->
+<meta charset="utf-8">
+
+<!-- seo optimization -->
+<meta name="keywords" content="HTML, css, startup" >
+
+<!-- responsiveness -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>firstHomepage</title>
+
+<style type="text/css">
+	table th  tr {border:3px solid tomato; border-collapse:collapse;}
+</style>
+
+</head>
+<body id="body1">
+
+<!-- text editing features -->	
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<p>The big brown fox jumped over the lazy dog</p>
+
+
+<!-- link -->
+
+<!-- link to external path -->
+<a href="https://www.twitter.com/i/trends" target="_blank">Twitter trends</a>
+
+
+<!-- link to local file path -->
+<a href="troll.html">troll world</a> <!-- if on same folder -->
+<a href="down/troll.html">troll world</a> <!-- if on one down different folder -->
+<br/>
+
+
+<!-- displaying an image -->
+<img src="images/exampleimage1.jpg" alt="No Internet connection. Check your cables" width="200" height="200">
+
+
+<!-- picture element -->
+<picture>
+	<source media="min-width:450px" srcset="images/exampleimage2.jpg">
+	<source media="min-width:650px" srcset="images/exampleimage3.jpg">	
+	<source media="min-width:2980px" srcset="images/exampleimage3.jpg">
+	<img src="images/exampleimage4.jpg">
+</picture>
+<br/><br/>
+
+
+<!-- table use -->
+<table>
+	<thead>
+		<tr>
+			<th>Username</th>
+			<th>City</th>
+			<th>Identification number</th>
+			<th>Present</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Joseph</td>
+			<td>Nairobi</td>
+			<td>8723hbjdj</td>
+			<td>YES</td>
+		</tr>
+		<tr>
+			<td>Joe</td>
+			<td>Kisumu</td>
+			<td>8921hjb12</td>
+			<td>YES</td>
+		</tr>
+		<tr>
+			<td>Tbalwa</td>
+			<td>Mombasa</td>
+			<td>6532gsav</td>
+			<td>YES</td>
+		</tr>
+	</tbody>
+</table>
+
+<br/> <br/>
+
+
+<!-- description list -->
+<dl>
+	<dt>B</dt>
+	<dd>this is the second letter of the alphabet</dd>
+</dl>
+
+
+<br/> <br/>
+
+
+
+<!-- iframe -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xbrKA6IwgcM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Monaco Hotlap"></iframe>" 
+
+<br/> <br/>
+
+<!-- javascript example -->
+<p  id="jsexample1"></p>
+<button onclick="funcexample()" style="width:200px; height:50px;">Click Here</button>
+
+<button onclick="changecolor()" style="width:200px; height:50px;">Click Here2</button>
+<!-- do javascript in html -->
+<script type="text/javascript">
+	//coding in javascript
+
+	//javascript function example
+
+	//change content
+	function funcexample() {
+		document.getElementById("jsexample1").innerHTML = "okay, let's go"
+	}
+
+	//change style
+	function changecolor() {
+		document.getElementById("body1").style.backgroundColor = "yellow"
+	}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
