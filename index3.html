@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>	
+	<title>thirdHomePage</title>
+
+<style type="text/css">
+	#item1 {
+		grid-area: header;
+		background-color: yellow;
+		padding: 20px;
+	}
+	#item2 {
+		grid-area: menu;
+		background-color: red;
+		padding: 20px;
+	}
+	#item3 {
+		grid-area: main;
+		background-color: black;
+		padding: 20px;
+		color: white;
+	}
+	#item4 {
+		grid-area: footer;
+		background-color: tomato;
+		padding: 20px;
+	}
+	/*#item5 {
+		grid-area: ;
+	}*/
+
+
+	.grid-container {
+		display: grid;
+		grid-template-areas: 
+		'header header header header'
+		'main main main menu'
+		'footer footer footer menu';
+		grid-gap: 20px;
+	}
+
+
+	/*form css*/
+	form {
+		margin: 15px;
+	}
+
+	input {
+		margin: 30px;
+	}
+
+</style>
+
+
+</head>
+<body>
+
+
+<!-- grid template layout -->
+<div class="grid-container">
+	<div id="item1">1</div>
+	<div id="item2">2</div>
+	<div id="item3">3</div>
+	<div id="item4">4</div>
+	<!-- <div id="item5">5</div> -->
+</div>
+
+<br/> <br/> <br/>
+
+
+
+
+<!-- html form -->
+<form action="#" method="post" >
+	
+	<!-- form elements entered here -->
+	<input type="text" name="username" id="username" placeholder="Enter Your Username"> <br/>
+	<input type="email" name="email" id="email" placeholder="Enter Your email"> <br/>
+	<label for="password">Password</label> <br/>
+	<input type="password" name="pass" id="pass">
+	<br/>
+	<!-- special  inputs -->
+	<label >Male</label>
+	<input type="radio" name="male">
+	<label >Female</label>
+	<input type="radio" name="female"><br/>
+
+
+	<label >Car</label>	<input type="checkbox" name="Car">
+	<label >Plane</label>
+	<input type="checkbox" name="Plane"><br/>
+
+
+<!-- selects multimedia items -->
+	<input type="file" name="file"> <br/>
+
+	<select>
+		<option>Select a value</option>
+		<option>Nissan</option>
+		<option>Volvo</option>
+		<option>Toyota</option>
+	</select><br/>
+
+
+
+	<textarea rows="5" cols="10" placeholder="Enter your bio"></textarea>
+<br/>
+
+	<input type="submit" name="save" id="submit" value="Save data" style="background-color:blue; padding:10px;">
+	<input type="reset" name="reset" id="reset" value="reset" style="background-color:red; padding:10px;">
+
+
+</form>
+
+
+
+
+</body>
+</html>
